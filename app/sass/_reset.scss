@@ -93,3 +93,17 @@ hr {
 input, select {
     vertical-align:middle;
 }
+
+
+//
+ul,li{
+    list-style-type: none;
+}
+
+input, textarea, button{
+    border: none;
+}
+
+button{
+    cursor: pointer;
+}
