@@ -1,5 +1,6 @@
 @import  'app/sass/vars'       
 @import  'app/sass/fonts'
+@import  'app/sass/libs'
 @import  'app/sass/reset'
 @import  'app/sass/global' 
 
@@ -17,18 +18,18 @@
         padding-left: 35px
     &__list-link
         color: $title
-        padding-bottom: 1px
-        transition: all 3s
+        padding-bottom: 0 2px 1px
         @extend  %quicksand-400
         &:hover
             color: $accent 
             border-bottom: 1px solid  $accent 
-            @extend %quicksand-500
+            @extend %roboto-700
             
     &__list-link--active
         color: $accent 
         border-bottom: 1px solid  $accent 
-        @extend %quicksand-500
+        @extend %roboto-700
+
 
 .user-nav
     display: flex
@@ -56,6 +57,7 @@ footer
     display: flex
     padding: 70 0 40px
     border-bottom: 1px solid #ececec
+    @extend %quicksand-500
     &__contact
         width: 250px
         margin-right: 66px
@@ -160,6 +162,76 @@ footer
         cursor: pointer
     &__accept-img + &__accept-img
         margin-left: 26px
+
+.top-slider
+    background-image: url('../images/slider/top-slider.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-color: $bg
+    padding-top: 65px
+    padding-bottom: 44px
+    &__container
+        max-width: 1560px
+    &__content
+        margin-left: 175px 
+        padding-top: 125PX
+    &__item
+        display: flex !important
+        justify-content: space-between
+    &__title
+       max-width: 670px
+       font-size: 58px
+       line-height: 68px
+       color: $title
+       @extend %roboto-700
+       margin-bottom: 35px
+    &__next
+        max-width: 470px
+        margin-bottom: 55px
+        color: $default
+        @extend %quicksand-500
+        line-height: 26px
+    &__link
+        @extend %btn
+        padding: 14px 35px
+        text-align: center
+    .slick-dots
+        display: flex
+        justify-content: center
+        margin-top: -70px
+        li
+            padding: 0px 5px
+            line-height: 0
+            button
+                padding: 0
+                font-size: 0
+                background-color: transparent
+                width: 26px
+                height: 26px
+                border-radius: 50%
+                left: 50%
+                top: 50%
+                border: 1px solid transparent
+                position: relative
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 6px
+                    height: 6px
+                    border-radius: 50%
+                    background-color: $default
+                    transform: translate(-50%, -50%)
+            &.slick-active
+                button
+                    border-color: $accent
+                    &::before
+                        background-color: $accent
+                    
+                    
+
+                
+
+
+
     
 @import  'app/sass/medea'    
-
