@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="12" viewBox="0 0 60 12">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 12px;
+        fill: #8d8d8d;
+        font-family: Quicksand;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <text id="We_Accept" data-name="We Accept" class="cls-1" x="-0.182" y="8.769">We Accept</text>
+</svg>
