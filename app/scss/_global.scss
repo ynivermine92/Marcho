@@ -1,0 +1,91 @@
+html,
+body {
+	height: 100%;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body{
+    font-size: 16px;
+    @extend %quicksand-500;
+    color: $default;
+}
+.title{
+    text-align: center;
+    @extend %roboto-700;
+    text-transform: uppercase;
+    line-height: 65px;
+    font-size: 48px;
+    color: $title;
+    margin-bottom: 10px;
+}
+.text{
+    text-align: center;
+    line-height: 26px;
+    max-width: 570px;
+    margin: 0 auto 55px; //55  нижний отступ 
+}
+
+.bredcrumbs{
+    display: inline-flex;
+    justify-content: center;
+    padding-left: 25px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: url('../images/icons/home.svg');
+        width: 16px;
+        height: 16px;
+        left: 0;
+        top: -2px;
+    }
+    &__list{
+        display: flex;
+    }
+    &__item{
+        color: #727272;
+        padding-right: 40px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/angle-right.svg');
+            width: 9px;
+            height: 10px;
+            right: 15px;
+            top: 2px;
+        }
+        &:last-child{
+            color: $accent;
+            padding-right: 0px;
+            &::after{
+                display: none;
+            }
+        }
+    }
+    &__link{
+        color: inherit;
+    }
+}
+.header--404-page{
+    background-color: $bg;
+}
+
