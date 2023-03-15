@@ -1,0 +1,47 @@
+.categories
+    &__items
+        display: grid
+        min-height: 650px
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+        grid-gap: 30px
+    &__item
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+        .categories__link
+            color: black
+        &:nth-child(1)
+            grid-row: span 2
+            .categories__item-subtitle,
+            .categories__link:hover
+                color: #5800e4
+        &:nth-child(2)
+            grid-column: span 2
+    &__item-subtitle
+        padding: 30px 0 8px
+    &__item-title
+        padding-bottom: 8px
+    &__link
+        transition: all .5s
+
+    &__item:nth-child(2)
+        display: flex
+        justify-content: center
+        flex-direction: column
+        padding-left: 30px
+        .categories__item-subtitle,
+        .categories__link:hover
+            color: red
+
+    &__item:nth-child(3)
+        .categories__item-subtitle
+            color:#ffb534
+        .categories__link:hover
+            color:#ffb534
+    
+    &__item:nth-child(4)
+        .categories__item-subtitle
+            color:#34c3ff
+        .categories__link:hover
+            color:#34c3ff

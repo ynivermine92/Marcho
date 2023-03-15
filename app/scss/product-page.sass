@@ -1,0 +1,155 @@
+.blog-page
+    padding: 120px 0 60px 
+    &__inner
+        display: flex
+        justify-content: space-between
+    &__content
+        margin-right: 30px
+    &__aside
+        width: 370px
+    &__item
+        width: 770px
+        margin-bottom: 60px
+        &.blog-page__item--no-image
+            border-top: 1px solid #ececec
+            box-shadow: 0px 20px 60px 0px rgba(202, 202, 202, 0.35)
+
+    &__item-link
+        display: block
+        color: inherit
+        margin-bottom: 20px
+        font-size: inherit
+        font-family: inherit    
+    &__link
+        display: block
+        color: inherit
+    &__img
+        max-width: 770px
+        height: 450px
+        object-fit: cover
+        display: block
+    &__item-box
+        border: 1px solid #ececec
+        border-top: none
+        padding: 40px
+    &__item-title
+        color: $title
+        font-size: 22px
+        @extend %roboto-700
+        transition: all .3s
+        &:hover
+            color: $accent
+    
+    .block-box
+        justify-content: start
+        &__author
+            margin-right: 30px    
+    .video-fashion__popup
+        position: relative
+        max-width: 770px
+        height: 450px
+        img
+            animation: spin 5s linear 0s infinite
+            
+.blog-page
+    &__slider
+        .slick-prev,
+        .slick-next
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            background-color:$accent
+            z-index: 5
+            border: none
+            cursor: pointer
+            path
+                fill:#ffff
+        .slick-disabled
+            background-color:#ffff
+            box-shadow: 0px 7px 20px 0px rgba(168, 168, 168, 0.3)
+            path
+                fill: #fe3e57
+                box-shadow: 0px 7px 20px 0px rgba(254, 62, 87, 0.3)
+                
+    .slick-prev
+        right: 40px
+    .slick-next
+        left: 40px
+.person
+    border: 1px solid #ececec
+    padding: 40px 25px
+    text-align: center
+    margin-bottom: 40px
+    img
+        display: inline-block
+        width: 160px
+        height: 160px
+        object-fit: cover
+        margin: 0 auto
+    &__name
+        padding-top: 30px
+        font-size: 18px
+        color:$title
+        @extend %roboto-700
+    &__position
+        padding: 10px 0 30px
+        @extend %roboto-400
+        color: $accent
+    &__text
+         line-height: 1.6
+         padding-bottom: 30px
+    &__sosial-link
+         margin: 0 8px
+         path
+            fill: $default
+         &:hover
+            path
+                fill: $accent
+.latest-post
+    padding: 35px 30px 40px
+    border: 1px solid #ececec
+    margin-bottom: 40px
+    &__title
+        color: $title
+        @extend %roboto-400
+        font-size: 22px
+        margin-bottom: 35px
+    &__item
+        display: flex
+        margin-top: 20px
+        & + .latest-post__item
+            border-top: 1px solid #ececec
+            padding-top: 20px
+    &__box
+        padding-left: 15px
+    &__title-link
+        font-size: 18px
+        color: $title
+        line-height: 28px
+        @extend %roboto-400
+    &__box-tite
+        margin-bottom: 8px
+        &:hover
+            color: $accent
+    &__date
+        color: $default
+        position: relative
+        padding-left: 30px
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            top: 0                                 
+            background-image: url('../images/icons/calendar.svg')
+            width: 16px
+            height: 16px
+
+#map
+    height: 450px
+    width: 100%

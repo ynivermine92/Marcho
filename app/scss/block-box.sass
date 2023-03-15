@@ -1,0 +1,19 @@
+.block-box
+    display: flex
+    justify-content: space-between
+    margin-bottom: 20px
+    &__author,
+    &__date
+        padding-left: 30px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 20px
+            height: 20px 
+            left: 0
+            top: -2px
+    &__author::before
+        background-image: url('../images/icons/user-grey.svg')
+    &__date::before
+        background-image: url('../images/icons/time.svg')
