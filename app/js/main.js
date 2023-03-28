@@ -1,5 +1,18 @@
 $(function(){
 
+  let burger = document.querySelector('.burger-menu');
+  burger.addEventListener('click', function(){
+     this.classList.toggle('active'); 
+    document.querySelector('.mobile-menu').classList.toggle("show");
+  })
+
+
+
+
+
+
+
+
   $('.blog-page__slider').slick({
     nextArrow :'<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="26px" viewBox="0 0 9 14" version="1.1"><path d="M 7.835938 6.382812 C 8.1875 6.722656 8.1875 7.277344 7.835938 7.621094 L 3.335938 11.996094 C 2.984375 12.335938 2.414062 12.335938 2.0625 11.996094 C 1.710938 11.652344 1.710938 11.097656 2.0625 10.757812 L 5.925781 7 L 2.0625 3.242188 C 1.710938 2.902344 1.710938 2.347656 2.0625 2.003906 C 2.414062 1.664062 2.988281 1.664062 3.339844 2.003906 L 7.839844 6.378906 Z M 7.835938 6.382812 "/></g></svg></button>',
     prevArrow :'<button type="button" class="slick-next"><svg  width="16px" height="20px" viewBox="0 0 9 14" version="1.1"><path d="M 1.164062 6.382812 C 0.8125 6.722656 0.8125 7.277344 1.164062 7.621094 L 5.664062 11.996094 C 6.015625 12.335938 6.585938 12.335938 6.9375 11.996094 C 7.289062 11.652344 7.289062 11.097656 6.9375 10.757812 L 3.074219 7 L 6.9375 3.242188 C 7.289062 2.902344 7.289062 2.347656 6.9375 2.003906 C 6.585938 1.664062 6.011719 1.664062 5.660156 2.003906 L 1.160156 6.378906 Z M 1.164062 6.382812 "/></g></svg></button>',

@@ -1,0 +1,138 @@
+.header
+    padding: 40px 40px
+    @media (max-width: 550px)
+         &
+            padding: 40px 10px
+    @media (max-width: 550px)
+         &
+            img
+                width: 135px
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+        
+.menu
+    @media (max-width: 950px)
+        &
+            display: none
+    &__list
+        display: flex
+    &__list-item + .menu__list-item
+        padding-left: 35px
+    &__list-link
+        color: $title
+        padding-bottom: 0 2px 1px
+        @extend  %quicksand-400
+        &:hover
+            color: $accent 
+            border-bottom: 1px solid  $accent 
+            @extend %roboto-700
+            
+    &__list-link--active
+        color: $accent 
+        border-bottom: 1px solid  $accent 
+        @extend %roboto-700
+    @media (max-width: 950px)
+/*     & 
+        display: none */
+
+.user-nav
+    display: flex
+    @media (max-width: 950px)
+        &
+            display: none
+    &__link
+        position: relative
+    &__link + .user-nav__link
+        padding-left: 25px
+    &__num
+        position: absolute
+        height: 20px
+        width: 20px
+        border-radius: 50%
+        background-color: $accent
+        text-align: center
+        right: -12px
+        top: -8px
+        color: #ffff
+        line-height: 20px
+        font-size: 12px
+
+
+/* burger menu */
+
+.burger-menu
+  width: 30px
+  height: 27px
+  border: none
+  background: 0 0
+  padding: 0
+  // display: none 992
+  z-index: 1000
+  position: relative
+  &__line
+    display: block
+    position: absolute
+    width: 30px
+    height: 3px
+    background-color: #000
+    top: 50%
+    transform: translateY(-50%)
+    transition: .15s all ease
+    &::before,&::after
+      position: absolute
+      display: block
+      content: ''
+      width: 30px
+      height: 3px
+      background-color: #000
+      transition: .15s all ease
+    &::before
+      top: -10px
+    &::after
+      bottom: -10px
+      transition: .15s all ease
+  &.active .burger-menu__line
+    background-color: transparent
+    &::before
+      transform: rotate(45deg)
+      top: 0
+      background-color: #414042
+    &::after
+      transform: rotate(-45deg)
+      bottom: 0
+      background-color: #414042
+
+.mobile-menu
+  position: fixed
+  width: 100vw
+  height: 100vh
+  left: 0
+  right: 0
+  bottom: 0
+  top: 0
+  background-color: #ffdb77
+  z-index: 10
+  display: none
+  &.show
+    display: block
+  &__box
+    height: inherit
+    padding: 40px
+    background-color: black
+    display: flex
+    justify-content: center
+    align-content: center
+  &__list
+    padding: 0
+  &__item
+    list-style: none
+    text-align: center
+    margin-bottom: 1.25em
+  &__url
+    text-decoration: none
+    color: #ffff
+    font-size: 2.25em
+    font-weight: 400
+    border-bottom: 2px dashed #414042

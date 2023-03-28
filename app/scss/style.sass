@@ -4,52 +4,13 @@
 @import  'app/scss/libs'
 @import  'app/scss/reset'
 @import  'app/scss/global' 
-/*npm uninstall*/
-.header
-    padding: 40px 40px
-    &__inner
-        display: flex
-        justify-content: space-between
-        align-items: center
-
-.menu
-    &__list
-        display: flex
-    &__list-item + .menu__list-item
-        padding-left: 35px
-    &__list-link
-        color: $title
-        padding-bottom: 0 2px 1px
-        @extend  %quicksand-400
-        &:hover
-            color: $accent 
-            border-bottom: 1px solid  $accent 
-            @extend %roboto-700
-            
-    &__list-link--active
-        color: $accent 
-        border-bottom: 1px solid  $accent 
-        @extend %roboto-700
+/* **********************************/
+@import  'app/scss/header'
 
 
-.user-nav
-    display: flex
-    &__link
-        position: relative
-    &__link + .user-nav__link
-        padding-left: 25px
-    &__num
-        position: absolute
-        height: 20px
-        width: 20px
-        border-radius: 50%
-        background-color: $accent
-        text-align: center
-        right: -12px
-        top: -8px
-        color: #ffff
-        line-height: 20px
-        font-size: 12px
+
+
+
 footer
     background-color: $bg 
 
