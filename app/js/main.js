@@ -1,16 +1,19 @@
 $(function(){
 
+  let menu = document.querySelector('.burger-menu');
+    menu.addEventListener('click',(e)=>{
+        document.body.style.overflow ='hidden'
+      if(menu.classList.contains('active')){
+        document.body.style.overflow ='visible'
+      }
+    })
+
+
   let burger = document.querySelector('.burger-menu');
   burger.addEventListener('click', function(){
      this.classList.toggle('active'); 
     document.querySelector('.mobile-menu').classList.toggle("show");
   })
-
-
-
-
-
-
 
 
   $('.blog-page__slider').slick({

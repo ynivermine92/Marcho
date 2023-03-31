@@ -1,5 +1,5 @@
 .header
-    padding: 40px 40px
+    padding: 40px 0px
     @media (max-width: 550px)
          &
             padding: 40px 10px
@@ -39,7 +39,7 @@
 
 .user-nav
     display: flex
-    @media (max-width: 950px)
+    @media (max-width: 550px)
         &
             display: none
     &__link
@@ -145,3 +145,7 @@
           color: $accent 
           border-bottom: 1px solid  $accent 
           @extend %roboto-700
+.burger-menu.active
+  body
+      overflow-x: hidden
+  

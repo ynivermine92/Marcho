@@ -89,3 +89,8 @@ body{
     background-color: $bg;
 }
 
+input,button:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+    border: none;
+}
