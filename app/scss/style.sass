@@ -7,88 +7,9 @@
 /* **********************************/
 @import  'app/scss/header'
 @import  'app/scss/footer'
+@import  'app/scss/top'
 
 
-
-
-
-
-.top
-    &__container
-        display: flex
-        margin: 0 auto
-        max-width: 1700px
-        background-repeat: no-repeat
-        background-size: cover
-        background-position: top center
-        padding: 120px 130px
-    &__inner
-        text-align: center
-
-
-.top-slider
-    background-image: url('../images/slider/top-slider.png')
-    background-repeat: no-repeat
-    background-size: cover
-    background-color: $bg
-    padding-top: 65px
-    padding-bottom: 44px
-    &__container
-        max-width: 1560px
-    &__content
-        margin-left: 175px 
-        padding-top: 125PX
-    &__item
-        display: flex !important
-        justify-content: space-between
-    &__title
-       max-width: 670px
-       font-size: 58px
-       line-height: 68px
-       color: $title
-       @extend %roboto-700
-       margin-bottom: 35px
-    &__next
-        max-width: 470px
-        margin-bottom: 55px
-        color: $default
-        @extend %quicksand-500
-        line-height: 26px
-    &__link
-        @extend %btn
-        padding: 14px 35px
-        text-align: center
-    .slick-dots
-        display: flex
-        justify-content: center
-        margin-top: -70px
-        li
-            padding: 0px 5px
-            line-height: 0
-            button
-                padding: 0
-                font-size: 0
-                background-color: transparent
-                width: 26px
-                height: 26px
-                border-radius: 50%
-                left: 50%
-                top: 50%
-                border: 1px solid transparent
-                position: relative
-                &::before
-                    content: ''
-                    position: absolute
-                    width: 6px
-                    height: 6px
-                    border-radius: 50%
-                    background-color: $default
-                    transform: translate(-50%, -50%)
-            &.slick-active
-                button
-                    border-color: $accent
-                    &::before
-                        background-color: $accent
 
 .categories-info
     padding: 120px 0 120px 
