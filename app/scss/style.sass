@@ -8,105 +8,10 @@
 @import  'app/scss/header'
 @import  'app/scss/footer'
 @import  'app/scss/top'
+@import  'app/scss/categories'
 
 
-
-.categories-info
-    padding: 120px 0 120px 
-    background-image: url('../images/decor/categories-left.png')
-    background-repeat: no-repeat
-    background-position: center left
-    &__inner
-          background-image: url('../images/decor/categories-right.png')
-          background-repeat: no-repeat
-          background-position: center right
-
-.info
-    &__wrapper
-        display: flex
-        justify-content: space-between
-        margin-bottom: 110px
-        position: relative
-        &::before,
-        &::after
-            content: ''
-            position: absolute
-            z-index: -1
-        &::before
-            background-image: url(../images/decor/info-before-bg.svg)
-            width: 120px
-            height: 121px
-            top: -40px
-            left: -45px
-        &::after
-            background-image: url(../images/decor/info-after-bg.svg)
-            bottom: -23px
-            right:-23px
-            width: 60px
-            height: 52px
-    &__item
-        background-color: #fff
-        padding: 60px 30px
-        width: 310px
-        box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35)
-
-    &__item-title
-        margin: 35px 0 10px
-        color: $title
-        font-size: 22px
-        @extend %quicksand-400
-    &__item-text
-        font-size: 16px
-        @extend %quicksand-500
-        color: $default
-.categories
-    &__items
-        display: grid
-        min-height: 650px
-        grid-template-columns: repeat(3, 1fr)
-        grid-template-rows: repeat(2, 1fr)
-        grid-gap: 30px
-    &__item
-        background-repeat: no-repeat
-        background-size: cover
-        background-position: center center
-        .categories__link
-            color: black
-        &:nth-child(1)
-            grid-row: span 2
-            .categories__item-subtitle,
-            .categories__link:hover
-                color: #5800e4
-        &:nth-child(2)
-            grid-column: span 2
-    &__item-subtitle
-        padding: 30px 0 8px
-    &__item-title
-        padding-bottom: 8px
-    &__link
-        transition: all .5s
-
-    &__item:nth-child(2)
-        display: flex
-        justify-content: center
-        flex-direction: column
-        padding-left: 30px
-        .categories__item-subtitle,
-        .categories__link:hover
-            color: red
-
-    &__item:nth-child(3)
-        .categories__item-subtitle
-            color:#ffb534
-        .categories__link:hover
-            color:#ffb534
-    
-    &__item:nth-child(4)
-        .categories__item-subtitle
-            color:#34c3ff
-        .categories__link:hover
-            color:#34c3ff
-
+  
 .video-fashion
     background-color: $bg 
     background-image: url('../images/decor/pattern.svg')
