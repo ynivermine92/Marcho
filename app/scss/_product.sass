@@ -1,0 +1,123 @@
+.product
+    padding: 105px 0 120px
+    text-align: center
+    @media (max-width: 1200px)
+        .container
+            max-width: 1000px
+    &__items
+        display: grid
+        grid-template-columns: repeat(3, 1fr) 
+        grid-gap: 45px 30px
+        @media (max-width: 1200px)
+            grid-template-columns: repeat(2, 1fr) 
+        @media (max-width: 800px)
+            grid-template-columns: repeat(1, 1fr) 
+        @media (max-width: 650px)
+            grid-template-columns: repeat(2, 1fr) 
+            grid-gap: 20px 20px
+        @media (max-width: 450px)
+            grid-template-columns: repeat(1, 1fr) 
+    &__link 
+        text-transform: uppercase
+        color: $title
+        display: inline-block
+        border: 1px solid $accent
+        padding: 14px 27px
+        margin-top:55px
+        @media (max-width: 650px)
+            margin-top: 20px
+    
+
+.product-item
+    border: 1px solid #ececec
+    max-width: 370px
+    margin-top: 40px
+    @media (max-width: 1200px)
+        margin: 0 auto
+    &__img-box
+        position: relative
+        height: 370px
+        overflow: hidden
+        margin-bottom: 25px
+        @media (max-width: 650px)
+            height: auto
+        @media (max-width: 450px)
+            height: 280px
+            width: 260px
+            margin-bottom: 0px
+    &__images
+        width: 100%
+    &__link-box
+        margin-bottom: 25px
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 50px
+        width: 220px
+        height: 50px
+        border-radius: 22px
+        margin: 0 auto
+        display: flex
+        align-items: center
+        justify-content: space-around
+        background-color: #fff
+        transition: all .3s
+        transform: translateY(300%)
+        @media (max-width: 650px)
+            width: 200px
+    &__link--line::before,
+    &__link--line::after
+        content: ''
+        position: absolute
+        background-color: #ececec
+        width: 1px
+        height: 30px
+        top: 10px
+    &__link--line::before
+        left: 70px
+    &__link--line::after
+        right: 70px
+    &__link
+        display: inherit
+        path
+            transition: all .3s
+    &__link:hover
+        path
+            fill: $accent
+    &__images
+        object-fit: cover //img
+    &:hover
+        .product-item__link-box
+            transform: translateY(0)
+    &__title
+        color: $title
+        padding: 15px 2px 20px      
+        @extend %roboto-400  
+    &__price
+        display: flex
+        justify-content: center
+        @extend %roboto-400
+    &__new-price
+        padding: 0 12px
+        color: $title
+    &__old-price
+        padding: 0 12px
+        text-decoration: line-through
+    &--sale
+        .product-item__img-box::before
+            content: "SALE"
+            @extend %btn
+            position: absolute
+            top: 10px
+            left: 10px
+            padding: 9px 12px
+        .product-item__images-icone::before
+            left: 40px
+            position: absolute
+            @media (max-width: 650px)
+                left: 0
+    .star
+        margin: 0 auto
+        padding-top: 30px
+        @media (max-width: 450px)
+            padding-top: 0px

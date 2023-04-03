@@ -1,0 +1,68 @@
+.video-fashion
+    background-color: $bg 
+    background-image: url('../images/decor/pattern.svg')
+    background-size: cover
+    background-position: top center
+    background-repeat: no-repeat
+    padding: 125px 0
+    @media (max-width: 1190px)
+         padding: 50px 0
+    &__inner
+        display: flex
+        @media (max-width: 1190px)
+            flex-wrap: wrap
+            justify-content: center
+    &__popup
+        margin-right: 60px
+        max-width: 530px  
+        width: 100%
+        height: 480px
+        display: flex
+        justify-content: center
+        align-items: center
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+        @media (max-width: 660px)
+            height: 300px
+            width: 70%
+            margin-right: 0px
+        @media (max-width: 450px)
+            width: 90%
+    &__play
+        position: relative
+        img
+            position: absolute
+            left: -67px
+            top: -67px
+            animation: spin 5s linear 0s infinite
+    &__content
+        max-width: 570px
+    &__subtitle
+        padding-top: 75px
+        font-size: 22px
+        color: $accent 
+        text-transform: uppercase
+        margin-bottom: 5px
+        @extend %quicksand-500
+        @media (max-width: 660px)
+            font-size: 20px
+            
+    &__title
+        text-align: left
+        margin-bottom: 40px
+        @media (max-width: 660px)
+            font-size: 30px
+            @media (max-width: 660px)
+                margin-bottom: 0px
+    &__text
+        text-align: left
+        font-size: 16px
+        @extend %quicksand-500
+        color: $default
+    &__link
+        @extend %btn
+        @extend %roboto-400
+        word-spacing:0.5px
+        span
+            padding-left: 5px
