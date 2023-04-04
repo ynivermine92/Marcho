@@ -15,8 +15,8 @@
         justify-content: space-between
         margin-bottom: 110px
         position: relative
-        @media (max-width: 960px)
-            justify-content: space-evenly
+        @media (max-width: 1000px)
+          flex-direction: column
             
         &::before,
         &::after
@@ -44,9 +44,10 @@
         padding: 60px 30px
         width: 310px
         box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35)
-        @media (max-width: 960px)
+        @media (max-width: 1000px)
             margin-bottom:  30px
-            margin-left: 30px
+            width: 100%
+            line-height: 22px
 
     &__item-title
         margin: 35px 0 10px

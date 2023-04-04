@@ -1,0 +1,57 @@
+.promo
+    background-image: url('../images/promo-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    padding: 150px 0 160px
+    text-align: center
+    @media (max-width: 620px)
+        padding: 60px 0
+   
+
+    &__inner
+        max-width: 570px
+        width: 100%
+        margin-left: auto
+    &__subtitle
+        color: $accent
+        text-transform: uppercase
+        margin-bottom: 10px
+        font-size: 22px
+    &__clock
+        display: flex
+        justify-content: space-between
+        margin-top: 55px
+        @media (max-width: 620px)
+            flex-wrap: wrap
+            justify-content: center
+    &__clock-item
+        background-color: #fff
+        box-shadow: 0px 10px 40px 0px rgba(187, 187, 187, 0.3)
+        width: 120px
+        height: 120px
+        border-radius: 50%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        text-align: center
+        @media (max-width: 620px)
+            margin: 20px 40px
+        @media (max-width: 450px)
+            margin: 20px 10px
+        span
+            font-size: 36px
+            @extend %roboto-700
+            margin: 12px 0 7px
+            color: $title
+
+    &__link
+        text-transform: uppercase
+        color: $title
+        display: inline-block
+        border: 1px solid $accent
+        padding: 14px 27px
+        margin-top: 55px
+
+@media (max-width: 1250px)
+ /*    .promo */
