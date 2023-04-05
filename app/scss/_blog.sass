@@ -75,3 +75,32 @@
         background-image: url('../images/icons/user-grey.svg')
     &__date::before
         background-image: url('../images/icons/time.svg')
+
+@media (max-width: 1250px)
+    .blog
+        &__items
+            flex-wrap: wrap
+            justify-content: start
+        &__items::after
+            display: none
+        &__item
+            margin: 20px 20px
+            width: 100%
+            max-width: 100%
+@media (max-width: 620px)
+    .blog
+        img
+            width: 100%
+@media (max-width: 450px)
+    .blog
+        &__item-box 
+            padding: 30px 0px
+            flex-wrap: wrap
+@media (max-width: 330px)
+    .block-box   
+        flex-wrap: wrap
+        &__date
+            padding-top: 10px
+            &::before
+                margin-top: 10px      
+
