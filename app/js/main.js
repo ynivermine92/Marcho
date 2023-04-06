@@ -47,7 +47,17 @@ $(function(){
      draggable : false,
      arrows : false,
      fade : true,
-     initialSlide: 0
+     initialSlide: 0,
+     responsive: [
+      {
+        breakpoint: 1170,
+        settings: {
+          autoplay: true,
+          autoplaySpeed: 2000,
+        }
+      },
+     ]
+     
   })
 
    let btnList = $('.button--list').on('click', function(){ 
