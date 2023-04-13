@@ -1,0 +1,59 @@
+.page-404
+    padding: 110px 0 120px
+    &__inner
+            display: flex
+            justify-content: space-between
+            align-items: center
+    &__content
+        max-width: 570px
+        width: 100%
+        margin-bottom: 20px
+    &__title
+        color: #28384f
+        margin-bottom: 40px
+        @extend  %roboto-700
+        font-size: 48px
+    &__text
+        margin-bottom: 55px
+        max-width: 470px
+        line-height: 26px
+    &__link
+        background-color: $accent
+        text-transform: uppercase
+        color: #fff
+        padding: 14px 35px
+        @extend %roboto-400
+        box-shadow: 0px 5px 25px 0px rgba(254, 62, 87, 0.35)
+
+
+@media (max-width: 1200px)
+    .page-404
+        img
+            height: 320px
+            width: 327px
+
+@media (max-width: 915px)
+    .page-404
+        &__inner
+            flex-wrap: wrap
+            justify-content: flex-end
+        &__text
+            max-width: 100%
+        &__content
+            max-width: 100%
+        &__link
+            display: inline-flex
+
+@media (max-width: 620px)
+    .page-404
+        &__title
+            font-size: 40px
+
+@media (max-width: 420px)
+    .page-404
+        img
+            height: 264px
+        &__link
+            width: 100%
+            text-align: center
+            display: block

@@ -19,10 +19,10 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="index.html">HOME</a>
+                            <a class="menu__list-link menu__list-link--active" href="index.html">HOME</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link menu__list-link--active" href="shop.html">SHOP</a>
+                            <a class="menu__list-link" href="shop.html">SHOP</a>
                         </li>
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="product.html">PAGE</a>
@@ -32,7 +32,7 @@
                         </li>
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="contact.html">CONCTACT</a>
-                        </li>  
+                        </li>
                     </ul>
                 </nav>
                 <div class="user-nav">
@@ -49,22 +49,23 @@
 
                 <button class="burger-menu">
                     <span class="burger-menu__line"></span>
-                  </button>
-                  <!-- burger-menu -->
-                  <nav class="mobile-menu">    
-                    <div class="mobile-menu__box">  
-                      <ul class="mobile-menu__list">
-                        <li class="mobile-menu__item"><a class="mobile-menu__url" href="index.html">HOME</a></li>
-                        <li class="mobile-menu__item"><a class="mobile-menu__url" href="shop.html">SHOP</a></li>
-                        <li class="mobile-menu__item"><a class="mobile-menu__url" href="product.html">PAGE</a></li> 
-                        <li class="mobile-menu__item"><a class="mobile-menu__url" href="blog.html">BLOG</a></li> 
-                        <li class="mobile-menu__item"><a class="mobile-menu__url" href="contact.html">CONCTACT</a></li> 
-                      </ul>
-                      <!-- /. mobile-menu__list -->
+                </button>
+                <!-- burger-menu -->
+                <nav class="mobile-menu">
+                    <div class="mobile-menu__box">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item"><a class="mobile-menu__url" href="index.html">HOME</a></li>
+                            <li class="mobile-menu__item"><a class="mobile-menu__url" href="shop.html">SHOP</a></li>
+                            <li class="mobile-menu__item"><a class="mobile-menu__url" href="product.html">PAGE</a></li>
+                            <li class="mobile-menu__item"><a class="mobile-menu__url" href="blog.html">BLOG</a></li>
+                            <li class="mobile-menu__item"><a class="mobile-menu__url" href="contact.html">CONCTACT</a>
+                            </li>
+                        </ul>
+                        <!-- /. mobile-menu__list -->
                     </div>
                     <!-- /. mobile-menu__box -->
-                  </nav>
-                  <!-- /. mobile-menu -->
+                </nav>
+                <!-- /. mobile-menu -->
 
             </div>
             <h1 class="title"></h1>
@@ -294,21 +295,45 @@
                                 </button>
                             </div>
                             <div class="shop-content__selects">
-                                <form class="shop-content__form" action="#">
-                                    <select class="shop-content__filter-sort select-style">
-                                        <option value="">Sort By Default</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
-                                        <option value="">4</option>
-                                    </select>
-                                    <select class="shop-content__filter-show select-style">
-                                        <option value="">Show 9</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
-                                        <option value="">4</option>
-
-                                    </select>
-                                </form>
+                                <form class="selector" action="#">
+                                    <div class="select__wrapper">
+                                        <div class="select">
+                                          <div class="select__btn">
+                                            <a class="select__link active">Выберите</a>
+                                          </div>
+                                          <ul class="select__list">
+                                            <li class="select__item">
+                                              <a class="select__link active" href="#">Выбирите</a>
+                                            </li>
+                                            <li class="select__item">
+                                              <a class="select__link select__link--kz" href="#">1</a>
+                                            </li>
+                                            <li class="select__item">
+                                                <a class="select__link select__link--kz" href="#">2</a>
+                                              </li>
+                                          </ul>
+                                        </div>
+                                      
+                                        <div class="select">
+                                          <div class="select__btn">
+                                            <a class="select__link active">Выбирте</a>
+                                          </div>
+                                          <ul class="select__list">
+                                            <li class="select__item">
+                                              <a class="select__link active" href="#">Выбирите</a>
+                                            </li>
+                                            <li class="select__item">
+                                              <a class="select__link select__link--kz" href="#">1</a>
+                                            </li>
+                                            <li class="select__item">
+                                                <a class="select__link select__link--kz" href="#">2</a>
+                                              </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                          
+                            
+                                  </form>  
                             </div>
                         </div>
                         <div class="shop-content__inner ">
@@ -964,7 +989,6 @@
     </footer>
 
     <script src="js/main.min.js"></script>
-    <script src="js/main.js"></script> 
 </body>
 
 </html>

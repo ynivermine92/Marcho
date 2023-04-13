@@ -316,22 +316,29 @@
         &__text-input
             width: 570px
             display: inline-block
+            background-color: aliceblue
             height: 50px
             padding: 0 20px
             border: 1px solid #f0f0f0f
 
         &__textarea
-            border: 1px solid #f0f0f0f
+            border: none
             padding: 15px 20px
             display: block
             width: 100%
             height: 225px
             resize: none
             margin-bottom: 40px
+            background-color: aliceblue
         &__btn
             border: none
             @extend %btn
             cursor: pointer
+@media (max-width: 1200px)
+    .comments-form
+        &__text-input + .comments-form__text-input
+            margin-left: 50px
+        
 
 @media (max-width: 1170px)
     .product-slide__thunb
@@ -351,6 +358,11 @@
             display: flex
             justify-content: center
             margin-right: 0px
+@media (max-width: 726px)
+    .related
+        &__items
+            grid-template-columns: repeat(3, 1fr) !important
+
 @media (max-width: 620px)
     .product-slide
         &__big
@@ -363,3 +375,48 @@
                 justify-content: center
         &__size-checkbox
             margin-top: 10px
+
+    .product-tabs 
+        padding-top: 60px
+        &__top-item
+            display: block
+            margin-left: 0px !important
+            margin-top: 30px
+    .comments-form
+        &__from-reting
+            display: flex
+            flex-direction: column
+            label
+                margin-top: 10px
+        &__reting-title
+            padding-bottom: 10px
+        &__box-input
+            display: block !important 
+        &__text-input 
+            margin-left: 0px !important
+            margin-top: 20px
+            width: 100% !important
+    .related
+        &__items
+            grid-template-columns: repeat(2, 2fr) !important
+
+
+
+
+
+
+
+
+
+@media (max-width: 446px)
+    .comments
+        img
+            display: none
+        &__content-name
+            margin-right: 8px 
+    .related
+        &__items
+            grid-template-columns: repeat(1, 1fr) !important
+
+
+        

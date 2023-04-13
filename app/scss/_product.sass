@@ -8,9 +8,10 @@
         display: grid
         grid-template-columns: repeat(3, 1fr) 
         grid-gap: 45px 30px
-        @media (max-width: 860px)
+        @media (max-width: 950px)
             grid-template-columns: repeat(2, 1fr)
-            grid-gap: 30px 
+            grid-gap: 30px
+            
         @media (max-width: 620px)
             grid-template-columns: repeat(1, 1fr)
             grid-gap: 0px
@@ -28,18 +29,22 @@
     border: 1px solid #ececec
     max-width: 370px
     margin-top: 40px
+    @media (max-width: 1140px)
+        .star
+            padding-top: 0px !important
+    @media (max-width: 950px)
+        max-width: 100%
+
     @media (max-width: 620px)
         max-width: 100%
     &__img-box
         position: relative
-        height: 370px
         overflow: hidden
         margin-bottom: 25px
-        @media (max-width: 1050px)
-            height: 320px
-        @media (max-width: 620px)
-            height: 300px
+    /*  media   1140px
+            height: 305px */
 
+       
     &__images
         width: 100%
     &__link-box
