@@ -20,6 +20,7 @@
 @import  'app/scss/model'
 @import  'app/scss/filter'
 @import  'app/scss/shop'
+@import  'app/scss/blog-page'
 
     
 
@@ -44,89 +45,7 @@
 
 
 
-.blog-page
-    padding: 120px 0 60px 
-    &__inner
-        display: flex
-        justify-content: space-between
-    &__content
-        margin-right: 30px
-    &__aside
-        width: 370px
-    &__item
-        width: 770px
-        margin-bottom: 60px
-        &.blog-page__item--no-image
-            border-top: 1px solid #ececec
-            box-shadow: 0px 20px 60px 0px rgba(202, 202, 202, 0.35)
 
-    &__item-link
-        display: block
-        color: inherit
-        margin-bottom: 20px
-        font-size: inherit
-        font-family: inherit    
-    &__link
-        display: block
-        color: inherit
-    &__img
-        max-width: 770px
-        height: 450px
-        object-fit: cover
-        display: block
-    &__item-box
-        border: 1px solid #ececec
-        border-top: none
-        padding: 40px
-    &__item-title
-        color: $title
-        font-size: 22px
-        @extend %roboto-700
-        transition: all .3s
-        &:hover
-            color: $accent
-    
-    .block-box
-        justify-content: start
-        &__author
-            margin-right: 30px    
-    .video-fashion__popup
-        position: relative
-        max-width: 770px
-        height: 450px
-        img
-            animation: spin 5s linear 0s infinite
-            
-.blog-page
-    &__slider
-        .slick-prev,
-        .slick-next
-            position: absolute
-            top: 50%
-            transform: translateY(-50%)
-            width: 50px
-            height: 50px
-            border-radius: 50%
-            display: flex
-            align-items: center
-            justify-content: center
-            background-color:$accent
-            z-index: 5
-            border: none
-            cursor: pointer
-            path
-                fill:#ffff
-        .slick-disabled
-            background-color:#ffff
-            box-shadow: 0px 7px 20px 0px rgba(168, 168, 168, 0.3)
-            path
-                fill: #fe3e57
-                box-shadow: 0px 7px 20px 0px rgba(254, 62, 87, 0.3)
-                
-    .slick-prev
-        right: 40px
-    .slick-next
-        left: 40px
 .person
     border: 1px solid #ececec
     padding: 40px 25px
