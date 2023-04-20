@@ -1,6 +1,7 @@
 $(function(){
-
-/*   let filterMenu = document.querySelector('.shop__filterMenu');
+  window.onload=function(){
+  
+  let filterMenu = document.querySelector('.shop__filterMenu');
   let filter = document.querySelector('.filter');
   let shopInner = document.querySelector('.shop__inner');
   let filterIcon = document.querySelector('.filterIcon');
@@ -13,8 +14,7 @@ $(function(){
              shopInner.classList.remove('active')
          }
       })
- */
-
+    }
   document.querySelectorAll(".select").forEach((select) => {
     const selectBtn = select.querySelector(".select__btn");
     const selectList = select.querySelector(".select__list");
