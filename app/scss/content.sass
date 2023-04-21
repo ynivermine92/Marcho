@@ -124,10 +124,11 @@
             background-image: url('../images/icons/phone-icon.svg')
             top: 15px
             left: 20px
-    &__info-item-location::after
+    &__info-item-location
         width: 14px
         left: 23px
-        background-image: url('../images/icons/location-icon.svg')
+        &::after
+            background-image: url('../images/icons/location-icon.svg')
     &__info-item-email::after
         width: 18px
         left: 21px
@@ -182,6 +183,10 @@
             width: 100% !important
         &__form-input:nth-child(3)
             max-width: 100%
+@media (max-width: 1260px)
+    .categories-info
+        .container
+            padding: 0px 25px
 @media (max-width: 1100px)
     .contact 
         padding: 120px 0px
