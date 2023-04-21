@@ -12,7 +12,7 @@
             grid-template-columns: repeat(2, 1fr)
             grid-gap: 30px
             
-        @media (max-width: 620px)
+        @media (max-width: 585px)
             grid-template-columns: repeat(1, 1fr)
             grid-gap: 0px
     &__link 
@@ -41,12 +41,11 @@
         position: relative
         overflow: hidden
         margin-bottom: 25px
-    /*  media   1140px
-            height: 305px */
-
-       
+  
     &__images
         width: 100%
+        @media (max-width: 585px)
+            height: 310px
     &__link-box
         margin-bottom: 25px
         position: absolute

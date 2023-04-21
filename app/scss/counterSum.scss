@@ -1,0 +1,53 @@
+.counter {
+    width: 100%;
+    max-width: 114px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+  
+    &__input {
+      width: 50px;
+      height: 100%;
+      font-family: "Roboto", Arial, sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      text-align: center;
+      outline: none;
+      padding: 0 5px;
+    }
+  
+    &__btn {
+      width: 40px;
+      height: 100%;
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: background 0.3s;
+  
+
+  
+      &.minus {
+        background-image: url(https://i.postimg.cc/d0R1H0hH/minus.png);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-color: black;
+      }
+  
+      &.plus {
+        background-image: url(https://i.postimg.cc/Gtfh88f2/plus.png);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-color: black;
+      }
+  
+      &.disabled {
+        pointer-events: none;
+      }
+    }
+    
+  }
